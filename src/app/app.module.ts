@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { NavigationComponent } from './configuration/navigation/navigation.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     LoginComponent,
     ConfigurationComponent,
-    NavigationComponent
+    NavigationComponent,
+    PageNotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
