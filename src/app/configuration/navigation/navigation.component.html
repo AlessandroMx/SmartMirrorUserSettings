@@ -1,22 +1,19 @@
-<aside class="menu">
-  <p class="menu-label">
-    General
-  </p>
-  <ul class="menu-list">
-    <li><a>Perfil</a></li>
+<section class="side-nav is-hidden-mobile">
+  <aside class="menu">
+    <p class="menu-label">
+      General
+    </p>
+    <ul class="menu-list">
+      <li><a (click)="clickPerfil()" [ngClass]="{'is-active' : statusPerfil}" routerLink="profile">Perfil</a></li>
+    </ul>
+    <ul class="menu-list">
+      <li><a (click)="clickPreferencias()" [ngClass]="{'is-active': statusPreferencias}" >Preferencias</a></li>
+    </ul>
+  </aside>
+</section>
+<div class="tabs is-hidden-desktop is-toggle is-fullwidth">
+  <ul>
+    <li class="has-background-white-ter" (click)="clickPerfil()" [ngClass]="{'is-active' : statusPerfil}" routerLink="profile"><a>Perfil</a></li>
+    <li class="has-background-white-ter" (click)="clickPreferencias()" [ngClass]="{'is-active' : statusPreferencias}"><a>Preferencias</a></li>
   </ul>
-  <p class="menu-label">
-    Administración
-  </p>
-  <ul class="menu-list">
-    <li><a>General</a></li>
-    <li>
-      <a class="">Administra tus cuentas</a>
-      <ul>
-        <li><a>Google</a></li>
-        <li><a>Twitter</a></li>
-        <li><a>Facebook</a></li>
-      </ul>
-    </li>
-  </ul>
-</aside>
+</div>

@@ -7,6 +7,7 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { NavigationComponent } from './configuration/navigation/navigation.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './configuration/profile/profile.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LoginComponent,
     ConfigurationComponent,
     NavigationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProfileComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
