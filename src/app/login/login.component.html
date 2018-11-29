@@ -14,37 +14,39 @@
           </div>
         </div>
         <div class="content">
-          <div class="field">
-            <label class="label">ID</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="text" placeholder="Ingresa tu ID">
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
+          <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm?.value)">
+            <div class="field">
+              <label class="label">ID</label>
+              <div class="control has-icons-left has-icons-right">
+                <input (ngModel)="id" name="id" class="input" type="text" placeholder="Ingresa tu ID">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <p class="help is-success"></p>
             </div>
-            <p class="help is-success"></p>
-          </div>
-          <div class="field">
-            <label class="label">Password</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="password" placeholder="Ingresa la contraseña">
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control has-icons-left has-icons-right">
+                <input (ngModel)="password" name="password" class="input" type="password" placeholder="Ingresa la contraseña">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <p class="help is-success"></p>
             </div>
-            <p class="help is-success"></p>
-          </div>
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link">Ingresar</button>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Ingresar</button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
