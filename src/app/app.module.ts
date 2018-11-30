@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProfileComponent } from './configuration/profile/profile.component';
 import { AuthService } from './login/auth.service';
 import { UpdateService } from './configuration/update.service';
+import { PreferencesComponent } from './configuration/preferences/preferences.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { UpdateService } from './configuration/update.service';
     ConfigurationComponent,
     NavigationComponent,
     PageNotFoundComponent,
-    ProfileComponent
+    ProfileComponent,
+    PreferencesComponent
   ],
   providers: [
     AuthService,

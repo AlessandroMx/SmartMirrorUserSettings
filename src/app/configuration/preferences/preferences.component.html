@@ -1,0 +1,49 @@
+<div class="level">
+  <div class="level-item">
+    <div class="card">
+      <form  #preferencesForm="ngForm" (ngSubmit)="updateUser(preferencesForm?.value)">
+        <header class="card-header">
+          <p class="card-header-title">
+            Editar Preferencias
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <div class="field">
+              <label class="label">Twitter</label>
+              <div class="control">
+                <input (ngModel)="twitter" name="twitter"  class="input" type="text" placeholder="e.g john.doe123">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Twitter password</label>
+              <div class="control">
+                <input (ngModel)="twitterPassword" name="twitterPassword"  class="input" type="password" placeholder="Insert password">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Mail</label>
+              <div class="control">
+                <input (ngModel)="mail" name="mail"  class="input" type="text" placeholder="e.g john.doe123@coldmail.com">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Mail password</label>
+              <div class="control">
+                <input (ngModel)="mail" name="mailPassword"  class="input" type="password" placeholder="Insert password">
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item" type="submit">Save</a>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
