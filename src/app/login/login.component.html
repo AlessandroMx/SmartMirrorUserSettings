@@ -47,6 +47,11 @@
               </div>
             </div>
           </form>
+          <br>
+          <div *ngIf="loginInvalid" class="notification is-danger">
+            <!-- <button class="delete"></button> -->
+            Ha ingresado un usuario y/o contraseña inválidos. Vuelva a intentarlo.
+          </div>
         </div>
       </div>
     </div>
