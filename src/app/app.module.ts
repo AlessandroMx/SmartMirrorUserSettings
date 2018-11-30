@@ -11,6 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './configuration/profile/profile.component';
 import { AuthService } from './login/auth.service';
+import { UpdateService } from './configuration/update.service';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { AuthService } from './login/auth.service';
     ProfileComponent
   ],
   providers: [
-    AuthService
+    AuthService,
+    UpdateService
   ],
   bootstrap: [AppComponent]
 })

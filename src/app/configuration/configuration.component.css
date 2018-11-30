@@ -1,3 +1,11 @@
-.content {
-    margin-left: 20%;
+@media only screen and (min-width: 1024px) {
+    .content {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        margin-top: 30px;
+    }
 }
